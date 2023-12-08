@@ -1,4 +1,4 @@
-package Trebuchet;
+package Day1;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,7 +11,7 @@ public class Trebuchet {
     public static void main(String[] args) throws IOException{
 
 
-        FileInputStream doc = new FileInputStream(new File("Trebuchet/document.txt"));
+        FileInputStream doc = new FileInputStream(new File("Day1/document.txt"));
         Scanner scanner = new Scanner(doc);
         
         ArrayList<String> documentArray = new ArrayList<>();
@@ -34,7 +34,7 @@ public class Trebuchet {
 
         System.out.println("\n\n-------------Test---------------");
 
-        FileInputStream test = new FileInputStream(new File("Trebuchet/test.txt"));
+        FileInputStream test = new FileInputStream(new File("Day1/test.txt"));
         Scanner testScanner = new Scanner(test);
 
         ArrayList<String> testArray = new ArrayList<>();

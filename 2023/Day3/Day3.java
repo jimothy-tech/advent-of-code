@@ -59,7 +59,7 @@ public class Day3{
 
                 if (symbolFlag){
                     sum += Integer.valueOf(prospectNum);
-                    System.out.println(prospectNum);
+                    // System.out.println(prospectNum);
                 }
             }
         }
@@ -233,6 +233,48 @@ public class Day3{
         }
         return false;
     }
+
+    // public static boolean checkForSymbol(String[][] matrix, int y, int x) {
+    //     // Check if the element at the given coordinates is a symbol
+    //     String element = matrix[y][x];
+    //     if (!element.matches("[0-9.]")) {
+    //         return true;
+    //     }
+    
+    //     // Check vertically adjacent elements
+    //     if (y > 0 && matrix[y-1][x].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    //     if (y < matrix.length - 1 && matrix[y+1][x].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    
+    //     // Check horizontally adjacent elements
+    //     if (x > 0 && matrix[y][x-1].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    //     if (x < matrix[0].length - 1 && matrix[y][x+1].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    
+    //     // Check diagonally adjacent elements
+    //     if (y > 0 && x > 0 && matrix[y-1][x-1].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    //     if (y > 0 && x < matrix[0].length - 1 && matrix[y-1][x+1].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    //     if (y < matrix.length - 1 && x > 0 && matrix[y+1][x-1].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    //     if (y < matrix.length - 1 && x < matrix[0].length - 1 && matrix[y+1][x+1].matches("[^0-9.]")) {
+    //         return true;
+    //     }
+    
+    //     // If no symbol was found, return false
+    //     return false;
+    // }
+
 
     public static String checkForGear(String[][] matrix, int y, int x){
         if((y > 0 && y < matrix.length - 1) && (x > 0 && x < matrix[0].length - 1)){ // if coordinate is in middle
